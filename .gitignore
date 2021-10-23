@@ -1,0 +1,16 @@
+.DS_Store
+CMakeFiles/
+elf2uf2/
+generated/
+pico-sdk/
+CMakeCache.txt
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+Makefile
+cmake_install.cmake
+*.bin
+*.dis
+*.elf
+*.elf.map
+*.hex
+*.uf2
