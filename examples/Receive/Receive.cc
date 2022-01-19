@@ -9,18 +9,18 @@ so you can recreate it :)
 */
 int main() {
     stdio_init_all();
-    const uint RADIO_RECIEVER_PIN = 17;
-    gpio_init(RADIO_RECIEVER_PIN);
+    const uint RADIO_RECEIVER_PIN = 17;
+    gpio_init(RADIO_RECEIVER_PIN);
     
     RCSwitch rcSwitch = RCSwitch();
-    rcSwitch.enableReceive(RADIO_RECIEVER_PIN);
+    rcSwitch.enableReceive(RADIO_RECEIVER_PIN);
 
     while (true) {
         if (rcSwitch.available()) {
             std::cout << "VALUE RECEIVED: " << rcSwitch.getReceivedValue() << std::endl;
-            std::cout << "PROTOCOL RECIEVED: " << rcSwitch.getReceivedProtocol() << std::endl;
-            std::cout << "BIT LENGTH RECIEVED: " << rcSwitch.getReceivedBitlength() << std::endl;
-            std::cout << "PULSELENGTH RECIEVED: " << rcSwitch.getReceivedDelay() << std::endl;
+            std::cout << "PROTOCOL RECEIVED: " << rcSwitch.getReceivedProtocol() << std::endl;
+            std::cout << "BIT LENGTH RECEIVED: " << rcSwitch.getReceivedBitlength() << std::endl;
+            std::cout << "PULSELENGTH RECEIVED: " << rcSwitch.getReceivedDelay() << std::endl;
             rcSwitch.resetAvailable();
             
             sleep_ms(100);
