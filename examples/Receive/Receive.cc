@@ -23,7 +23,7 @@ int main() {
             std::cout << "PULSELENGTH RECIEVED: " << rcSwitch.getReceivedDelay() << std::endl;
             rcSwitch.resetAvailable();
             
-            sleep_ms(1000);
+            sleep_ms(100);
         }
     }
 

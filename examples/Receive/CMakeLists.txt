@@ -1,5 +1,5 @@
-add_executable(recieve
-        recieve.cc
+add_executable(receive
+        receive.cc
         ../../radio-switch.cc
         )
 
@@ -11,11 +11,11 @@ add_compile_options(-Wall
 )
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(recieve pico_stdlib)
+target_link_libraries(receive pico_stdlib)
 
 # enable usb output, disable uart output
-pico_enable_stdio_usb(recieve 1)
-pico_enable_stdio_uart(recieve 0)
+pico_enable_stdio_usb(receive 1)
+pico_enable_stdio_uart(receive 0)
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(recieve)
+pico_add_extra_outputs(receive)

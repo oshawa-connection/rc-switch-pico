@@ -14,6 +14,6 @@ pico_sdk_init()
 
 # Add blink example
 add_subdirectory(examples/Transmit)
-add_subdirectory(examples/Recieve)
+add_subdirectory(examples/Receive)
 
 

@@ -1,5 +1,5 @@
 add_executable(transmit
-        transmit.cc
+        Transmit.cc
         ../../radio-switch.cc
         )
 
