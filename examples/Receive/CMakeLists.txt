@@ -1,5 +1,5 @@
 add_executable(receive
-        receive.cc
+        Receive.cc
         ../../radio-switch.cc
         )
 
